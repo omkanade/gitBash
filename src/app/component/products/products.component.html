@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory ">
+            <div class="card col-md-3">
+                <strong>Product Name:</strong>
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.item_name}}</h5>
+                <p><strong>Price:</strong> {{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>
